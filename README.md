@@ -6,20 +6,27 @@
    1. Maven Project
    2. Java Language
    3. Add Dependencies
+      1. Spring Web
+      2. Spring Security
+      3. OAuth
 
 2. Define a REST controller that will accept users web requests
 3. Create a UserDetailsService that returns authenticated user credentials
-4. Open a landing page with a login form to validate the authenticated user credentials
-5. Return a Json Web Token if user is authenticated and redirect to protected web page (/hello)
+4. Open a landing page with a login form to validate the authenticated user credentials (/login)
+5. Return a Json Web Token if user is authenticated (/authenticate) and redirect to protected web page (/hello)
 
 ### Deployment Steps
 
-1. Download ZIP file from GitHub repo
-2. Docker ...
-3. Tests ...
+1. Download and extract ZIP from Github repo
+
+   git clone https://github.com/craigcook04/authserver.git
+2. Open authserver-main with IntelliJ IDEA 
+3. Run command “docker build .” in terminal to build Dockerfile
+4. Select “Run AuthserverApplication” from main method
+5. Open LocalHost/Postman and follow user instructions below
 
 
-### Intended User Work Flow:
+### User Work Flow:
 
 1. localhost:8080/login [GET]:
 ![Login Page](img/login.png)
@@ -31,10 +38,15 @@
 
 ### Other Notes
 
-After a quick chat with Naz, I realized that this is a challenging coding exercise which may not be easy to have a fully functioning solution in under a week. 
-Rather, this exercise is more about the learning process of working with new technology and developing research skills to find open-source building blocks to ultimately compile into a unique solution based on these requirements. 
-Generally, it is quite easy to get most of the way there by piecing together a variety of open source projects like a puzzle, and learning about the technology along the way. The final steps to complete a working solution based on unique project requires additional investigation and more narrow experience. 
-In any case, the nature of software development demands continuous learning and a passion to work with new technologies, which I take pride in myself, and would be honoured to explain in more detail with the Mercedes IAM technical team. 
+After a quick chat with Naz, I learned many core values of a software developer on the Mercedes-Benz team. Working in talented and diverse teams, it is important to have problem-solving and communication skills, in addition to technical excellence. 
+
+This project is my application to demonstrate these 3 characteristics.
+
+I understand this exercise is more about the learning process of working with new technology and developing research skills to find building blocks that can then compile into a unique solution based on project requirements. 
+Generally, it is quite easy to get most of the way there by piecing together a variety of open source projects like a puzzle, and learning about the technology through practice. When completing the final steps to produce a working solution, additional investigation and more narrow experience is required. 
+
+In any case, the nature of software development demands continuous learning and a passion to work with new technologies, which I take pride in myself. It would be my pleasure to review this implementation in more detail with the Mercedes IAM technical team. 
+
 Thank you for your time.
 
 
